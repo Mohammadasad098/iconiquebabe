@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-page-background: #fff8fa;
+    --color-tar: #1f1217;
+    --color-pink-primary: #ec4899;
+    --color-pink-deep: #db2777;
+    --color-pink-soft: #fdf2f8;
+    --color-pink-border: #fbcfe8;
+  }
+
+  body {
+    background-color: var(--color-page-background);
+    color: #241019;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-mono-typewriter {
+  font-family: 'Space Mono', 'DM Mono', monospace;
+  letter-spacing: -0.01em;
+}
+
+.font-sans-editorial {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom scrollbar in pink */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #fff8fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b650;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+/* Smooth transitions */
+.khy-link-hover {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s ease, opacity 0.3s ease;
+}
+
+.khy-link-hover:hover {
+  background-size: 100% 1px;
+  opacity: 0.8;
+}
+
+.khy-link-hover-active {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}

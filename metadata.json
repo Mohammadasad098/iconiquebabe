@@ -1,0 +1,8 @@
+{
+  "name": "ICONIQUE BABE – @iconiquebabe",
+  "description": "ICONIQUE BABE by @iconiquebabe. The premier pink & white luxury fashion house exploring modern feminine glam, sculpted latex silhouettes, and Italian handcrafted footwear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
